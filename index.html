@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <center><h1> Login Page</h1></center>
+    <form action="./Loginresponse.html" method="get">
+        <fieldset>
+            <legend> <center> <h3> LOGIN </h3></center></legend>
+            <dl>
+                <dd>
+                    <label for="name"> USER NAME </label>
+                    <input type="text" name="username" id="name" required autocomplete="off"
+                    pattern="[a-zA-Z\d\s]{8,16}"
+                    title="The user name should charcter, digit and should be min 8 and max 16 in length">
+                </dd>
+                <dd>
+                    <label for="password"> PASS WORD </label>
+                    <input type="password" name="password" id="password" required autocomplete="off"
+                    pattern="[a-zA-Z/d/s@]{,8}"
+                    title="The password can be any charcter,digit and special sysmbol with max length of 8">
+                </dd>
+            </dl>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <h6> Don't Have account <a href="./register.html"> Register Here </a></h6>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <center><h1> Register Page</h1></center>
+    <form action="./response.html" method="get">
+        <fieldset>
+            <legend> Register</legend>
+            <dl>
+                <dd>
+                    <label for="name"> User name</label>
+                    <input type="text" name="username" id="name" required autocomplete="off"
+                    pattern="[a-zA-Z\d\s]{8,16}"
+                    title="The user name should charcter, digit and should be min 8 and max 16 in length">
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <label for="password"> Password</label>
+                    <input type="password" name="password" id="password" required autocomplete="off"
+                    pattern="[a-zA-Z/d/s@]{,8}"
+                    title="The password can be any charcter,digit and special sysmbol with max length of 8">
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <label for="mail"> Mail</label>
+                    <input type="email" name="mail" id="mail" required autocomplete="off">
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <label for="phno"> Phone Number</label>
+                    <input type="tel" name="phno" id="phno" required autocomplete="off"
+                    pattern="[0-9]{10,10}"
+                    title="The phone number should be 10 in length">
+                </dd>
+            </dl>
+        </fieldset>
+        <input type="submit" value=" Register">
+    </form>
+</body>
+</html>
